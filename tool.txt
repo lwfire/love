@@ -12,4 +12,6 @@
                              git  commit -m 'PHP'-----PHP是注释
 
 3-----推送云端  git push -u origin master 
+
+进入github点击main  ---下拉选择master查看即可！
  
