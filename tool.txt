@@ -1,17 +1,20 @@
-1.进入git ----输入d：   回车
+1.进入git方式----输入d：   回车
 
 输入cd d:\git   回车
 
 出现 d:\git  
 
-2.git 上传
 
 
-1----查看命令   git  status
- 2---本地生效命令  git  add  *
+
+2.git 上传方法
+
+
+1----查看本地命令   git  status
+2---本地生效命令    git  add  *
                              git  commit -m 'PHP'-----PHP是注释
 
-3-----推送云端  git push -u origin master 
+3-----推送云端      git push -u origin master -f
 
 进入github点击main  ---下拉选择master查看即可！
  
