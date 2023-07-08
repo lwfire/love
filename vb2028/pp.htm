@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>vj</title>
+<body onselectstart="return false;" oncontextmenu="return false;" >
+</head>
+
+<body style="margin:0;border:0;" background-color: #66ffff; " scroll="no">
+<SCRIPT>
+var getParam = function(name){
+        var search = document.location.search;
+        var pattern = new RegExp("[?&]"+name+"\=([^&]+)", "g");
+        var matcher = pattern.exec(search);
+        var items = null;
+        if(null != matcher){
+                try{
+                        items = decodeURIComponent(decodeURIComponent(matcher[1]));
+                }catch(e){
+                        try{
+                                items = decodeURIComponent(matcher[1]);
+                        }catch(e){
+                                items = matcher[1];
+                        }
+                }
+        }
+        return items;
+};
+src = getParam("id");
+document.writeln("<OBJECT id=\"Live\" ");
+document.writeln("	CLASSID=clsid:174012D5-4141-44D6-8F44-729BB97C56EB ");
+document.writeln("	CODEBASE=\"http:\/\/stb.sinodig.com\/download2\/vjocx-ch.cab#version=3,0,1164,0\" ");
+document.writeln("	HEIGHT=100% WIDTH=100%>");
+document.writeln("	<PARAM NAME=\"Src\" VALUE='"+src+"'> ");
+document.writeln("	<param name=\"VideoAspect\" value=\"16:9\"> ");
+document.writeln("	<param name=\"StartDelay\" value=\"5\"> ");
+document.writeln("	<param name=\"Volume\" value=\"286\"> ");
+document.writeln("	<param name=\"updateurl\" value=\"http:/\/sitv.com\ ");
+document.writeln("	<param name=\"PlayMode\" value=\"full\"> ");
+document.writeln("	<param name=\"AutoFullscreen\" value=\"0\"> ");
+document.writeln("	<param name=\"BufferTime\" value=\"1\"> ");
+document.writeln("	<param name=\"autoplay\" value=\"true\"> ");
+document.writeln("<\/OBJECT>")
+</SCRIPT>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
