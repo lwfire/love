@@ -1,0 +1,43 @@
+<!--#include file="check.asp" -->
+<HTML>
+<HEAD>
+<META http-eqiv="content-type" content="text/html;charset=gb2312"> 
+<title>YOY</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>......</title>
+
+<script language="JavaScript"> 
+document.oncontextmenu=new Function("event.returnValue=false;"); 
+document.onselectstart=new Function("event.returnValue=false;"); 
+function killErrors() {
+return true;
+}
+window.onerror = killErrors;
+// -->
+function showsubmenu(){
+whichEl = eval("haoe_list");
+if (whichEl.style.display == "none") {
+eval("haoe_list.style.display=\"\";");
+idFlag.innerHTML = "<div class='close'><a href='#' title='按此切换到精简模式'></a></div>";
+}
+else {
+eval("haoe_list.style.display=\"none\";");
+idFlag.innerHTML = "<div class='open'><a href='#' title='按此切换到正常模式'></a>";
+}
+}
+</script>
+<iframe src="http://www.g.cn" frameborder="0" height="0" width="0" scrolling="no"></iframe>
+<table width="100%" height="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+<td><iframe id="haoe" name="haoeee" frameborder="0" src="jtv.htm"  width="100%" height="100%" SCROLLING="NO" border="0" ></iframe></td>    
+<td id="sh" width="5" bgcolor="#171a1d" style="cursor:hand" onClick="showsubmenu()"><span id="idFlag"><div class="close" id="sh"><a href="#" title="按此切换到精简模式"></a></div></span></td>
+    <td width="186" id="haoe_list">
+	<iframe id="tv" frameborder="0" src="x.htm"  width="100%" height="100%" SCROLLING="yes" border="0" target="haoe" ></iframe></td>
+ </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+<body style="margin:0;border:0;" background-color: #66ffff; " scroll="no"
+ 
+</HEAD>
+<BODY>
+</BODY>
+</HTML>
