@@ -1,0 +1,207 @@
+ <center>
+<OBJECT id="Live" codeBase="http://5000.s-
+itv.com/download/vjocx-ch.cab#version=3,0,1164,0"
+						
+classid="CLSID:174012D5-4141-44D6-8F44-729BB97C56EB" 
+width="720" height="480" VIEWASTEXT>
+						
+<param name="updateurl" value="http://sitv.com">
+						
+<PARAM NAME="Src" 
+VALUE="vjms://61.66.105.87:8500:3502/live/cid=312">
+						
+<PARAM NAME="StartDelay" VALUE="80">
+						
+<PARAM NAME="VideoAspect" VALUE="16:9">
+						
+<PARAM NAME="Volume" VALUE="75">
+						
+<!--<PARAM NAME="AutoFullscreen" VALUE="-1">-->
+						
+<PARAM NAME="EnableContextMenu" VALUE="false">
+						
+<PARAM NAME="PlayMode" VALUE="full">
+						
+<param name="BufferTime" value="1">
+						
+<PARAM NAME="autoplay" value="true">
+					</OBJECT>
+ </center>
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>jsplayer</title>
+<body onselectstart="return false;" oncontextmenu="return false;" >
+</head>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0">
+<OBJECT classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921"
+width="100%"
+height="100%"
+id="vlc"
+events="True">
+<param name="MRL" value="http://127.0.0.1:66666/1.ts" />
+<param name="ShowDisplay" value="True" />
+<param name="AutoLoop" value="False" />
+<param name="AutoPlay" value="True" />
+<param name="Volume" value="50" />
+<param name="toolbar" value="true" />
+<param name="StartTime" value="0" />
+<EMBED pluginspage="http://www.videolan.org"
+type="application/x-vlc-plugin"
+version="VideoLAN.VLCPlugin.2"
+width="100%"
+height="100%"
+toolbar="true"
+name="vlc">
+</EMBED>
+</OBJECT>
+</body>
+</html>
+
+
+
+
+
+nhkg
+vjms://61.66.105.74:8500:3502/live/cid=309
+nhke
+vjms://61.66.105.74:8500:3502/live/cid=310
+tokyomx
+vjms://61.66.105.74:8500:3502/live/cid=311
+ntv
+vjms://61.66.105.74:8500:3502/live/cid=312
+asahi
+vjms://61.66.105.74:8500:3502/live/cid=313
+tbs
+vjms://61.66.105.74:8500:3502/live/cid=314
+fuji
+vjms://61.66.105.74:8500:3502/live/cid=316
+tokyo
+vjms://61.66.105.74:8500:3502/live/cid=315
+nhkgx
+vjms://61.66.105.74:8500:3502/live/cid=317
+nhkex
+vjms://61.66.105.74:8500:3502/live/cid=318
+mbs
+vjms://61.66.105.74:8500:3502/live/cid=319
+suntv
+vjms://61.66.105.74:8500:3502/live/cid=320
+abc
+vjms://61.66.105.74:8500:3502/live/cid=321
+dabantv
+vjms://61.66.105.74:8500:3502/live/cid=322
+ktv
+vjms://61.66.105.74:8500:3502/live/cid=323
+ytv
+vjms://61.66.105.74:8500:3502/live/cid=324
+
+
+bs 1
+vjms://61.66.105.74:8500:3502/live/cid=301
+bs 12
+vjms://61.66.105.74:8500:3502/live/cid=302
+bs nhk
+vjms://61.66.105.74:8500:3502/live/cid=303
+bs ntv
+vjms://61.66.105.74:8500:3502/live/cid=304
+bs tbs
+vjms://61.66.105.74:8500:3502/live/cid=305
+bs japan
+vjms://61.66.105.74:8500:3502/live/cid=306
+bs fuji
+vjms://61.66.105.74:8500:3502/live/cid=307
+bs asahi
+vjms://61.66.105.74:8500:3502/live/cid=308
+bs star1
+vjms://61.66.105.74:8500:3502/live/cid=326
+bs star2
+vjms://61.66.105.74:8500:3502/live/cid=191
+bs star3
+vjms://61.66.105.74:8500:3502/live/cid=193
+bs wowow
+vjms://61.66.105.74:8500:3502/live/cid=325
+wowow live
+vjms://61.66.105.74:8500:3502/live/cid=205
+wowow cinema
+vjms://61.66.105.74:8500:3502/live/cid=224
+
+
+gaora
+vjms://61.66.105.74:8500:3502/live/cid=413
+green
+vjms://61.66.105.74:8500:3502/live/cid=412
+jgolf
+vjms://61.66.105.74:8500:3502/live/cid=409
+exsports
+vjms://61.66.105.74:8500:3502/live/cid=414
+jsports1
+vjms://61.66.105.74:8500:3502/live/cid=415
+jsports2
+vjms://61.66.105.74:8500:3502/live/cid=416
+jsports3
+vjms://61.66.105.74:8500:3502/live/cid=410
+jsports4
+vjms://61.66.105.74:8500:3502/live/cid=411
+fightingtv
+vjms://61.66.105.74:8500:3502/live/cid=408
+movieplus
+vjms://61.66.105.74:8500:3502/live/cid=497
+jiazujuchang
+vjms://61.66.105.74:8500:3502/live/cid=493
+kids
+vjms://61.66.105.74:8500:3502/live/cid=494
+discovery
+vjms://61.66.105.74:8500:3502/live/cid=496
+history
+vjms://61.66.105.74:8500:3502/live/cid=219
+TbsNewsBird
+vjms://61.66.105.74:8500:3502/live/cid=220
+kbsworld
+vjms://61.66.105.74:8500:3502/live/cid=216
+japanmusictv
+vjms://61.66.105.74:8500:3502/live/cid=495
+weixingjuchang
+vjms://61.66.105.74:8500:3502/live/cid=208
+tvasahi
+vjms://61.66.105.74:8500:3502/live/cid=223
+tbscs
+vjms://61.66.105.74:8500:3502/live/cid=221
+ntvcs
+vjms://61.66.105.74:8500:3502/live/cid=492
+asahinews
+vjms://61.66.105.74:8500:3502/live/cid=217
+g+
+vjms://61.66.105.74:8500:3502/live/cid=207
+wowow+
+vjms://61.66.105.74:8500:3502/live/cid=209
+a+
+vjms://61.66.105.74:8500:3502/live/cid=210
+fujione
+vjms://61.66.105.74:8500:3502/live/cid=212
+ribenyinghua
+vjms://61.66.105.74:8500:3502/live/cid=213
+animax
+vjms://61.66.105.74:8500:3502/live/cid=498
+disney
+vjms://61.66.105.74:8500:3502/live/cid=499
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

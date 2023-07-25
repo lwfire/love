@@ -1,0 +1,184 @@
+<html><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>节目列表</title>
+<style type="text/css">
+<!-- 
+* {padding:0;margin:0; font-size:12px;font-family: Verdana, Arial, Helvetica, sans-serif;} 
+body {SCROLLBAR-FACE-COLOR: #444; SCROLLBAR-HIGHliGHT-COLOR: #999; SCROLLBAR-SHADOW-COLOR: #222; SCROLLBAR-3DliGHT-COLOR: #000; SCROLLBAR-ARROW-COLOR: #ccc; SCROLLBAR-TRACK-COLOR: #666; SCROLLBAR-DARKSHADOW-COLOR: #111; background-color: #000000; } 
+body,td,th { font-family: Verdana, Arial, Helvetica, sans-serif; color: #FFFFFF; } h1{display:none;} 
+img{border:none;} ul{padding:0;margin:0;list-style-type:none;}
+/* 直播频道列表导航菜单 */ 
+#menu {width:138px; margin-left:2px;} 
+#menu li {list-style-type:none; display:block; width:138px;line-height:23px; background:url(img/menu_listbk.gif)  no-repeat;}
+#menu li.ft {background:url(img/menu_listbk2.gif)  no-repeat;}  
+#menu li a { display:block; text-decoration:none;  width:100%;  padding:1px 3px 0 3px; line-height:23px; } 
+#menu li a.list_name{ float:left;display:block; width:100%; padding-left:18px;line-height:21px;   } 
+#menu li a.list_play{ float:left;display:block; width:32px; line-height:21px;color:#888;  } 
+#menu h1 { display:block;font-size:12px;line-height:24px; font-weight:normal; margin-top:1px;} 
+#menu h1.ft_1{display:block; width:100%; text-align: left; padding-left:18px; border-bottom:#000 2px solid;} 
+#menu h2.ft_2{display:block; width:100%; text-align: left; padding-left:12px; font-size:12px;font-weight:normal;text-decoration:none; margin-top:5px; } 
+#menu h2.lm_2 a{display: block; BACKGROUND: url(img/tv.gif) #363636 no-repeat 8px 3px; 
+MARGIN-BOTTOM: 1px; WIDTH: 100%; COLOR: #d7d7d7; TEXT-INDENT: 25px; LINE-HEIGHT: 25px; BORDER-BOTTOM: #333333 1px solid; HEIGHT: 25px; TEXT-DECORATION: none}
+#menu h2.lm_2 a:hover{FONT-WEIGHT: bold; font-size:14px; BACKGROUND: url(img/tv.gif) #555555 no-repeat 8px 3px; color:#ececec;}
+#menu h1.lm_1{display:block; width:138px; color:#333;text-align:left; padding-left:5px;line-height:21px; } 
+#menu h2.lm_2{display:block; width:138px; color:#333; text-align: left;font-size:12px;font-weight:normal;text-decoration:none; margin-top:3px; } 
+#menu h1 a,#menu h1.ft_1 a{color:#ccc;} 
+#menu h1 a:hover,#menu h1.ft_1 a:hover,#menu h2.ft_2 a:hover{color:#ff6600;}
+#menu li a:hover span {cursor:hand;} 
+#menu li img{ float:left;display: block;} #menu li.end{border-bottom-width:1px; } 
+COLOR: #ff6600;TEXT-INDENT: 2px; padding-top:5px; LINE-HEIGHT: 22px; HEIGHT: 22px; TEXT-ALIGN: left;}
+.mlt a{COLOR: #ff6600;text-decoration: none;}
+.mlt a:hover{COLOR: #ff6600;text-decoration: none;}
+ --> 
+</style>
+<SCRIPT language="VBScript" type="text/VBScript">
+Function bytes2BSTR(vIn)
+strReturn = ""
+For i = 1 To LenB(vIn)
+ThisCharCode = AscB(MidB(vIn,i,1))
+If ThisCharCode < &H80 Then
+strReturn = strReturn & Chr(ThisCharCode)
+Else
+NextCharCode = AscB(MidB(vIn,i+1,1))
+strReturn = strReturn & Chr(CLng(ThisCharCode) * &H100 + CInt(NextCharCode))
+i = i + 1
+End If
+Next
+bytes2BSTR = strReturn
+End Function
+</script>
+<script language="javascript" type="text/javascript">
+function GetData(str) 
+{ 
+if(str!=""){
+var str2="/search/so.asp?k="+str.replace(/(\/|\\|\||\(|\)|\.|\*|\$|\&|\?|\+|\{|\}|\^|\[|\]|\-)/ig,'');
+		document.getElementById("halist").style.display="none";
+		document.getElementById("solist").style.display="block";
+		document.getElementById("solist").innerHTML=getDatal(str2);
+		}
+		else{
+		document.getElementById("solist").style.display="none";
+		document.getElementById("halist").style.display="block";
+	}
+}
+
+function getDatal(url){  
+    var xmlhttp = new ActiveXObject("MSXML2.XMLHTTP.3.0");
+    xmlhttp.open("post",url,false);   
+    xmlhttp.send();              
+    return bytes2BSTR(xmlhttp.responsebody);       
+    xmlhttp=nothing
+}  
+document.oncontextmenu=new Function("event.returnValue=false;"); 
+document.onselectstart=new Function("event.returnValue=false;");
+</script>
+<base target="haoeee">
+<script language="JavaScript"> 
+if(top==self){window.location="http://www.g.cn/"}
+</script>
+</head>
+<body  ondragstart="return false" onselectstart="return false">
+<div class="mlt">
+</div>
+<div id="halist" style="display:block;">
+<ul id="menu">
+<table border="0" width="100%" cellspacing="5" cellpadding="0" height="5">
+<tr><TR bgColor=000000>
+
+
+<li><h1 class="lm_1"> </h1>
+<h2 class="lm_2" id="CHT_1" style="display: none;">
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000210103.m3u8">YSP--综合</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000203603.m3u8">YSP--经济</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000203803.m3u8">YSP--综艺</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000204803.m3u8">YSP--国际</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000205103.m3u8">YSP--体育</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000204503.m3u8">YSP--体育+</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000203303.m3u8">YSP--电影</a>
+ <a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000510003.m3u8">YSP--军事</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000203903.m3u8">YSP--电视剧</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000499403.m3u8">YSP--记录</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000203503.m3u8">YSP--科学</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000204103.m3u8">YSP--戏曲</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000202603.m3u8">YSP--法制</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000204603.m3u8">YSP--新闻</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000204403.m3u8">YSP--少儿</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000205003.m3u8">YSP--音乐</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012375003.m3u8">YSP--奥运</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000204203.m3u8">YSP--农村</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2001656803.m3u8">YSP--CGTN</a>
+
+<a href="dp.htm?vurl=https://n24-cdn-live.ntv.co.jp/ch01/index_high.m3u8">YSP--NTVNEWS24</a>
+
+
+
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012514403.m3u8">YSP--第一剧场</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012513603.m3u8">YSP--风云剧场</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012511203.m3u8">YSP--怀旧剧场</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012513303.m3u8">YSP--世界地理</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012514103.m3u8">YSP--风云音乐</a>
+
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012513403.m3u8">YSP--兵器科技</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012514203.m3u8">YSP--风云足球</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012512503.m3u8">YSP--高尔夫网球</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012513903.m3u8">YSP--女性时尚</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012513803.m3u8">YSP--文化精品</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012513703.m3u8">YSP--央视台球</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012514003.m3u8">YSP--电视指南</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012513503.m3u8">YSP--卫生健康</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2012492303.m3u8">YSP--CCTV16|4K</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000266303.m3u8">YSP--CCTV4K</a>
+
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000295603.m3u8">YSP--江苏卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000272103.m3u8">YSP--北京卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000292403.m3u8">YSP--东方卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000295503.m3u8">YSP--浙江卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000296203.m3u8">YSP--湖南卫视</a>
+
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000294503.m3u8">YSP--湖北卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000292703.m3u8">YSP--广东卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000293903.m3u8">YSP--黑龙江卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000292203.m3u8">YSP--深圳卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000295003.m3u8">YSP--四川卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000296103.m3u8">YSP--河南卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000281303.m3u8">YSP--辽宁卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000298003.m3u8">YSP--安徽卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000294803.m3u8">YSP--山东卫视</a>
+<a href="dp.htm?vurl=http://175.6.244.246/tlivecloud-ipv6.ysp.cctv.cn/ysp/2000293403.m3u8">YSP--河北卫视</a>
+
+
+
+
+
+
+
+
+
+
+
+
+</h2></li>                                                                                                                                                                        
+
+
+</ul>
+</div>
+<!-- 频道列表导航结束 -->
+<script language="javascript" type="text/javascript">
+var crrCn=1;
+function OpenChanel(id) { 
+if (crrCn == id) { 
+if (document.getElementById("CHT_" + crrCn).style.display == "none") {document.getElementById("CHT_" + crrCn).style.display = "block";} 
+else {document.getElementById("CHT_" + crrCn).style.display = "none";} } 
+else {document.getElementById("CHT_" + crrCn).style.display = "none"; 
+var o2 = document.getElementById("CHT_" + id); o2.style.display = "block"; crrCn = id; } } 
+OpenChanel(crrCn); 
+document.getElementById("CHT_" + crrCn).style.display = "block"; 
+</script>
+<div id="solist" style="display:block"> </div>
+<div style="display:none">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,537 @@
+
+
+
+Do
+        DoEvents
+    Loop Until 终止进程("cmd.exe") = 0
+    Do
+        DoEvents
+    Loop Until 终止进程("mmmj.exe") = 0
+    Do
+        DoEvents
+    Loop Until 终止进程("conhost.exe") = 0
+    
+
+
+
+Form1.Text2.Text = "vjms://" + Text2.Text + ":8500:3502/live/cid=" + Text4.Text
+
+
+
+Call Form1.Command1_Click
+
+Form1.Show
+
+
+
+
+
+
+
+
+
+
+nhkg
+nhke
+ntv
+tbs
+fuji
+asahi
+tokyo
+tokyomx
+nhkgx
+nhkex
+ytv
+mbs
+ktv
+abc
+daban
+suntv
+bs1
+bsntv
+bsasahi
+bstbs
+bsfuji
+bsjapan
+wowow1
+wowow2
+wowow3
+bsstar1
+bsstar2
+bsstar3
+bs12
+bsnhk
+gaora
+green
+golf
+sports
+jsports1
+jsports2
+jsports3
+fighting
+jsports4
+movieplus
+jiatingjuchang
+kids
+discovery
+history
+tbsnewsbird
+kbsworld
+musicjapantv
+weixingjuchang
+ribenyinghua
+disney
+asahich1
+asahich2
+asports
+fujione
+animax
+gsports
+wowowplus
+tbsch1
+ntvcs
+
+If List1.Text = "nhkg" Then
+
+Text4.Text = "309"
+
+End If
+
+If List1.Text = "nhke" Then
+
+Text4.Text = "310"
+
+End If
+
+If List1.Text = "ntv" Then
+
+Text4.Text = "312"
+
+End If
+
+If List1.Text = "tbs" Then
+
+Text4.Text = "314"
+
+End If
+
+If List1.Text = "fuji" Then
+
+Text4.Text = "316"
+
+End If
+
+If List1.Text = "asahi" Then
+
+Text4.Text = "313"
+
+End If
+
+If List1.Text = "tokyo" Then
+
+Text4.Text = "315"
+
+End If
+If List1.Text = "tokyomx" Then
+Text4.Text = "311"
+
+End If
+
+If List1.Text = "nhkgx" Then
+
+Text4.Text = "317"
+
+End If
+
+If List1.Text = "nhkex" Then
+
+Text4.Text = "318"
+
+End If
+
+If List1.Text = "ytv" Then
+
+Text4.Text = "324"
+
+End If
+
+If List1.Text = "mbs" Then
+
+Text4.Text = "319"
+
+End If
+
+If List1.Text = "ktv" Then
+
+Text4.Text = "323"
+
+End If
+
+If List1.Text = "abc" Then
+
+Text4.Text = "321"
+
+End If
+
+If List1.Text = "daban" Then
+
+Text4.Text = "322"
+
+End If
+
+If List1.Text = "suntv" Then
+
+Text4.Text = "320"
+
+End If
+
+If List1.Text = "bs1" Then
+
+Text4.Text = "301"
+
+End If
+
+If List1.Text = "bsntv" Then
+
+
+
+Text4.Text = "304"
+
+End If
+
+If List1.Text = "bsasahi" Then
+
+
+
+Text4.Text = "308"
+
+End If
+
+If List1.Text = "bstbs" Then
+
+
+Text4.Text = "305"
+
+End If
+
+If List1.Text = "bsfuji" Then
+
+
+
+Text4.Text = "307"
+
+End If
+
+If List1.Text = "bsjapan" Then
+
+
+
+Text4.Text = "306"
+
+End If
+
+If List1.Text = "wowow1" Then
+
+
+
+Text4.Text = "325"
+
+End If
+
+If List1.Text = "wowow2" Then
+
+
+
+Text4.Text = "205"
+
+End If
+
+If List1.Text = "wowow3" Then
+
+
+
+Text4.Text = "224"
+
+End If
+
+
+If List1.Text = "bsstar1" Then
+
+
+
+Text4.Text = "326"
+
+End If
+
+If List1.Text = "bsstar2" Then
+
+
+
+Text4.Text = "191"
+
+End If
+
+If List1.Text = "bsstar3" Then
+
+
+
+Text4.Text = "193"
+
+End If
+
+If List1.Text = "bs12" Then
+
+
+
+Text4.Text = "302"
+
+End If
+
+If List1.Text = "bsnhk" Then
+
+
+
+Text4.Text = "303"
+
+End If
+
+
+
+If List1.Text = "gaora" Then
+
+
+
+Text4.Text = "413"
+
+End If
+If List1.Text = "green" Then
+
+
+
+Text4.Text = "412"
+
+End If
+
+If List1.Text = "golf" Then
+
+
+
+Text4.Text = "409"
+
+End If
+If List1.Text = "sports" Then
+
+
+
+Text4.Text = "414"
+
+End If
+
+If List1.Text = "jsports1" Then
+
+
+
+Text4.Text = "415"
+
+End If
+
+If List1.Text = "jsports2" Then
+
+
+
+Text4.Text = "416"
+
+End If
+
+If List1.Text = "jsports3" Then
+
+
+
+Text4.Text = "410"
+
+End If
+
+If List1.Text = "fighting" Then
+
+
+
+Text4.Text = "408"
+
+End If
+
+
+
+
+
+
+If List1.Text = "jsports4" Then
+
+
+
+Text4.Text = "411"
+
+End If
+
+
+
+If List1.Text = "movieplus" Then
+
+
+
+Text4.Text = "497"
+
+End If
+
+If List1.Text = "jiatingjuchang" Then
+
+
+
+Text4.Text = "493"
+
+End If
+
+If List1.Text = "kids" Then
+
+
+
+Text4.Text = "494"
+
+End If
+
+If List1.Text = "discovery" Then
+
+
+
+Text4.Text = "496"
+
+End If
+
+If List1.Text = "history" Then
+
+
+
+Text4.Text = "219"
+
+End If
+
+If List1.Text = "tbsnewsbird" Then
+
+
+
+Text4.Text = "220"
+
+End If
+
+If List1.Text = "kbsworld" Then
+
+
+
+Text4.Text = "216"
+
+End If
+If List1.Text = "musicjapantv" Then
+
+
+
+Text4.Text = "495"
+
+End If
+
+If List1.Text = "weixingjuchang" Then
+
+
+
+Text4.Text = "208"
+
+End If
+If List1.Text = "ribenyinghua" Then
+
+
+
+Text4.Text = "213"
+
+End If
+
+If List1.Text = "disney" Then
+
+
+
+Text4.Text = "499"
+
+End If
+
+If List1.Text = "asahich1" Then
+
+
+
+Text4.Text = "223"
+
+End If
+
+If List1.Text = "asahich2" Then
+
+
+
+Text4.Text = "217"
+
+End If
+If List1.Text = "asports" Then
+
+
+
+Text4.Text = "210"
+
+End If
+
+If List1.Text = "fujione" Then
+
+Text4.Text = "212"
+
+End If
+
+If List1.Text = "animax" Then
+
+Text4.Text = "498"
+
+End If
+
+If List1.Text = "gsports" Then
+
+Text4.Text = "207"
+
+End If
+
+If List1.Text = "wowowplus" Then
+
+Text4.Text = "209"
+
+End If
+
+If List1.Text = "tbsch1" Then
+
+Text4.Text = "221"
+
+End If
+
+
+If List1.Text = "ntvcs" Then
+
+Text4.Text = "492"
+
+End If
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
