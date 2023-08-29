@@ -1,0 +1,76 @@
+309|nhkg
+310|nhke
+311|tokyomx
+312|ntv
+313|asahi
+314|tbs
+315|tokyo
+316|fuji
+317|nhkgx
+318|nhkex
+319|mbs
+320|suntv
+321|abc
+322|tvdaban
+323|ktv
+324|ytv
+
+301|bs1
+302|bs12twellv
+303|bsnhk
+304|bsntv
+305|bstbs
+306|bsjapan
+307|bsfuji
+308|bsasahi
+325|bswowow
+326|bsstar1
+191|bsstar2
+193|bsstar3
+205|wowow live
+224|wowow cinema
+
+
+207|g plus
+208|weixingjuchang
+209|wowow plus
+210|a plus
+212|fujione
+213|ribenyinghua
+216|kbsworld
+217|asahi news
+219|history
+220|tbsnewsbird
+221|tbs cs
+223|tvasahi
+
+408|fightingtv
+409|jgolf
+410|jsports3
+411|jsports4
+412|green
+413|gaora
+414|sports
+415|jsports1
+416|jsports2
+492|ntv cs
+493|jiazujuchang
+494|kids
+495|japanmusictv
+496|discovery
+497|movieplus
+498|animax
+499|disney
+
+
+
+051|sstv
+052|mtv
+053|ntvnews24
+054|fujinext
+055|bsfishing
+057|bsfoxsports
+058|bssky
+
+
+
