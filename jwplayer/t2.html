@@ -1,0 +1,42 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+	<title>Live</title>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85685703-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'UA-85685703-3');
+	</script> -->
+
+	<!-- <script src="https://cdn.jwplayer.com/libraries/3MPpf3qh.js"> </script> -->
+	<!-- Self Hosted Player - see symbolic link on Server for version -->
+	<script src="./jwplayer.js"></script>
+	<script>jwplayer.key = "Gg4THUNctlQbqgkJoDw3n0rgoesc3wRTUeHDBaHcmyA=";</script>
+
+</head>
+
+<body style="background-color:#000000">
+
+<center>
+<div id="funklustStream"> </div>	
+
+	<script type='text/javascript'>
+		var playerInstance = jwplayer("funklustStream");
+		playerInstance.setup({
+			file: "https://live-play.cctvnews.cctv.com/cctv/merge_cctv13_mud.m3u8?auth_key=00000000",
+			height: 480,
+			width: 720,
+			androidhls: true,
+			primary: "html5",
+			mediaid: "FLlive"
+		});
+	</script>
+</center>
+</body>
+
+</html>
